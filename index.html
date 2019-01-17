@@ -14,11 +14,11 @@
   </head>
   <body>
     <div class="container">
-      <h1>Form Practice</h1>
+      <h1>Beer Suggestor</h1>
 
         <div class="card">
           <form id="beerForm">
-          <h1 class="card-title">Beer Choice</h1>
+
           <div class="card-body">
             <div class="form-group">
               <label for="hops">How do you like the beer to taste?</label>
@@ -60,31 +60,43 @@
 
       <div class="row" id="recommendation">
         <!--Hidden cards-->
-        <div class="card" id="ipaCard">
-          <h1 class="card-title">We Recommend:</h1>
-          <div class="card-body">
-            We recommend you try an IPA
+        <div class="col-12">
+          <div class="card" id="ipaCard">
+            <img class="card-img-top" src="imgs/ipa.png" alt="ipa">
+            <div class="card-body">
+              <h1 class="card-title">India Pale Ale (IPA)</h1>
+              <p class="card-text"><em>This hoppy beer is great whenever</em></p>
+              <p>A <strong>strong</strong> beer with <strong>strong</strong> flavor</p>
+            </div>
           </div>
-        </div>
-        <div class="card" id="redCard">
-          <h1 class="card-title">We Recommend:</h1>
-          <div class="card-body">
-            We recommend you try a Red Ale
-          </div>
-        </div>
-        <div class="card" id="stoutCard">
-          <h1 class="card-title">We Recommend:</h1>
-          <div class="card-body">
-            We recommend you try a Stout
-          </div>
-        </div>
-        <div class="card" id="pilsCard">
-          <h1 class="card-title">We Recommend:</h1>
-          <div class="card-body">
-            We recommend you try a Pilsner
-          </div>
-        </div>
 
+          <div class="card" id="redCard">
+            <img class="card-img-top" src="imgs/red.png" alt="red">
+            <div class="card-body">
+              <h1 class="card-title">Red Ale</h1>
+              <p class="card-text"><em>This complex beer is typically a spicy blend of malty and hoppy</em></p>
+              <p>Great for autumn drinking</p>
+            </div>
+          </div>
+
+          <div class="card" id="stoutCard">
+            <img class="card-img-top" src="imgs/stout.png" alt="stout">
+            <div class="card-body">
+              <h1 class="card-title">Stout</h1>
+              <p class="card-text"><em>Dark as the Abyss</em></p>
+              <p>Great for dreary <strong>hard drinking</strong></p>
+            </div>
+          </div>
+
+          <div class="card" id="pilsCard">
+              <img class="card-img-top" src="imgs/pilsner.png" alt="pilsner">
+              <div class="card-body">
+                <h1 class="card-title">Pilsner</h1>
+                <p class="card-text"><em>Light and airy</em></p>
+                <p>Easy drinking. Reach for one of these after work (or during work) on a hot day.</p>
+              </div>
+            </div>
+        </div>
     </div>
   </body>
 </html>

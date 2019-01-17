@@ -1,3 +1,20 @@
-#recommendation {
+body{
+  text-align:center;
+}
+#recommendation .card {
   display: none;
+}
+
+.card-img-top {
+  height: 300px;
+  width:auto;
+}
+
+.row {
+margin-top: 100px
+}
+
+h1 {
+  margin-bottom: 90px;
+  margin-top: 20px;
 }
