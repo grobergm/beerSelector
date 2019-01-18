@@ -1,6 +1,14 @@
-body{
-  text-align:center;
+html{
+  height:100%
 }
+
+body{
+  height:100%;
+  text-align:center;
+  background:linear-gradient(#ffcc00,#331e00);
+  font-family: roboto;
+}
+
 #recommendation .card {
   display: none;
 }
@@ -15,6 +23,8 @@ margin-top: 100px
 }
 
 h1 {
+  font-size:90px;
+  font-family:'Lobster', cursive;
   margin-bottom: 90px;
   margin-top: 20px;
 }

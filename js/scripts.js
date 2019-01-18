@@ -1,14 +1,15 @@
 // Back End Logic
 
 function beerSelector(hops,malt,hot,strength){
-  var ipaScore=(hops*2)+hot+(strength*2)
+  var ipaScore=(hops*3)+hot+(strength*2)
   var redScore=(hops*1.5)+(malt*2)+(hot*0.5)+strength
-  var stoutScore=(malt*3)+(strength*1.5)
-  var pilsScore=(hot*3)
+  var stoutScore=(malt*4)+(strength*1.5)
+  var pilsScore=(hot*5)
   console.log(ipaScore);
   console.log(redScore);
   console.log(stoutScore);
   console.log(pilsScore);
+
   if ((ipaScore>redScore)&&(ipaScore>stoutScore)&&(ipaScore>pilsScore)){
   return "ipa";
   }
@@ -22,7 +23,7 @@ function beerSelector(hops,malt,hot,strength){
     return "pils";
   }
   else {
-    alert("You broke it");
+    return "toss"
   }
 }
 
@@ -43,13 +44,21 @@ $(document).ready(function() {
     var strengthInput = parseInt($("#strength").val());
   var selection= beerSelector(hoppyInput,maltInput,hotInput,strengthInput);
   console.log(selection);
+    $("#recommendation .card").hide();
   if (selection==="ipa"){
-    $("#ipaCard").show()};
+    $("#ipaCard").show()
+  }
   if (selection==="red"){
-    $("#redCard").show()};
+    $("#redCard").show()
+  }
   if (selection==="stout"){
-    $("#stoutCard").show();}
+    $("#stoutCard").show()
+  }
   if (selection==="pils"){
-    $("#pilsCard").show();}
+    $("#pilsCard").show()
+  }
+  if (selection==="toss"){
+    $("#toss").show()
+  }
 })
 })
